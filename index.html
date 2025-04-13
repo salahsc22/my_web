@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Salah's Interactive Tech Roadmap</title>
+  <!-- ربط CSS -->
+  <link rel="stylesheet" href="style.css">
+  <!-- Font Awesome للايقونات -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- شريط التحميل المتحرك -->
+  <div class="loading-bar" id="loading-bar"></div>
+
+  <!-- الرأس -->
+  <header>
+    <div class="logo">
+      <img src="C:\Users\Legion\Desktop\Tech-Roadmap\your-logo.png" alt="Tech Roadmap Logo">
+    </div>
+    <h1>Salah's Interactive Tech Roadmap</h1>
+    <p>دليل تفاعلي لتعلم أحدث المجالات التقنية خطوة بخطوة، مع مسارات تعليمية متكاملة ومشاريع عملية.</p>
+    
+    <!-- شريط البحث -->
+    <div class="search-container">
+      <input type="text" id="search-input" placeholder="ابحث عن تقنية أو مهارة...">
+      <button id="search-btn"><i class="fas fa-search"></i></button>
+    </div>
+  </header>
+
+  <!-- القائمة التنقلية -->
+  <nav>
+    <button id="fields-btn" class="active-btn"><i class="fas fa-microchip"></i> المجالات التقنية</button>
+    <button id="faq-btn"><i class="fas fa-question-circle"></i> أسئلة شائعة</button>
+    <button id="resources-btn"><i class="fas fa-book"></i> مصادر إضافية</button>
+    <button id="roadmap-btn"><i class="fas fa-map-signs"></i> خارطة الطريق</button>
+  </nav>
+
+  <!-- القسم الرئيسي -->
+  <main>
+    <!-- مقدمة الموقع -->
+    <section class="intro" id="intro-section">
+      <div class="intro-text">
+        <h2>ابدأ رحلتك في عالم التقنية</h2>
+        <p>مرحبًا بك في دليلك التفاعلي لاستكشاف المجالات التقنية المختلفة. اختر أحد المجالات التالية لمعرفة المزيد عن مفاهيمه الأساسية، المشاريع المقترحة، والأدوات المستخدمة، بدءًا من المستوى المبتدئ وحتى المستوى المتقدم.</p>
+      </div>
+    </section>
+
+    <section class="fields" id="fields-section">
+      <div class="field" data-field="embedded">
+        <i class="fas fa-microchip"></i>
+        <h3>الأنظمة المضمّنة</h3>
+        <p class="field-brief">تصميم وبرمجة الأجهزة المدمجة</p>
+      </div>
+      <div class="field" data-field="networking">
+        <i class="fas fa-network-wired"></i>
+        <h3>الشبكات والاتصالات</h3>
+        <p class="field-brief">بنية الشبكات وبروتوكولات الاتصال</p>
+      </div>
+      <div class="field" data-field="iot">
+        <i class="fas fa-wifi"></i>
+        <h3>إنترنت الأشياء (IoT)</h3>
+        <p class="field-brief">ربط الأجهزة المادية بالإنترنت</p>
+      </div>
+      <div class="field" data-field="programming">
+        <i class="fas fa-code"></i>
+        <h3>البرمجة وتطوير البرمجيات</h3>
+        <p class="field-brief">تصميم وتطوير التطبيقات المختلفة</p>
+      </div>
+      <div class="field" data-field="cloud">
+        <i class="fas fa-cloud"></i>
+        <h3>الحوسبة السحابية</h3>
+        <p class="field-brief">إدارة البنية التحتية عبر الإنترنت</p>
+      </div>
+      <div class="field" data-field="ai">
+        <i class="fas fa-brain"></i>
+        <h3>الذكاء الاصطناعي</h3>
+        <p class="field-brief">أنظمة التعلم الآلي ومعالجة البيانات</p>
+      </div>
+    </section>
+
+    <section class="details" id="details">
+      <!-- هنا سيتم عرض التفاصيل عند النقر على الأيقونات -->
+    </section>
+
+    <section class="faq" id="faq-section" style="display: none;">
+      <h2>أسئلة شائعة (FAQ)</h2>
+      <div class="faq-search">
+        <input type="text" id="faq-search-input" placeholder="ابحث في الأسئلة الشائعة...">
+      </div>
+      <ul class="faq-list">
+        <li class="faq-item">
+          <div class="faq-question"><strong>هل أحتاج إلى خلفية تقنية قوية لتعلم هذه المجالات؟</strong> <i class="fas fa-chevron-down"></i></div>
+          <div class="faq-answer">
+            <p>لا، معظم المجالات توفر مسارات تعلم للمبتدئين، ويمكنك البدء بخطوات بسيطة مثل Arduino أو Python. المفتاح هو الاستمرارية والممارسة العملية من خلال المشاريع الصغيرة.</p>
+            <p>يمكنك البدء من الصفر في عدة مجالات مثل:</p>
+            <ul>
+              <li>الأنظمة المضمنة: ابدأ مع Arduino والمشاريع البسيطة</li>
+              <li>البرمجة: تعلم Python كلغة أولى</li>
+              <li>الشبكات: ابدأ بأساسيات كيفية عمل الإنترنت</li>
+            </ul>
+          </div>
+        </li>
+        <li class="faq-item">
+          <div class="faq-question"><strong>كم من الوقت يستغرق تعلم مجال معين؟</strong> <i class="fas fa-chevron-down"></i></div>
+          <div class="faq-answer">
+            <p>يعتمد على المجال والمستوى الذي تريد الوصول إليه. عادةً، يمكن للمبتدئين إتقان الأساسيات في 3-6 أشهر. الوصول لمستوى متوسط قد يستغرق من 6-12 شهرًا، أما المستوى المتقدم فيتطلب سنتين أو أكثر من الممارسة والدراسة المستمرة.</p>
+            <p>الجدول الزمني التقريبي حسب المجال:</p>
+            <ul>
+              <li>الأنظمة المضمنة: 4-8 أشهر للأساسيات</li>
+              <li>الشبكات: 6-9 أشهر للحصول على المعرفة الأساسية</li>
+              <li>البرمجة: 3-6 أشهر لإتقان لغة برمجة واحدة</li>
+              <li>الذكاء الاصطناعي: 9-12 شهرًا بعد إتقان البرمجة</li>
+            </ul>
+          </div>
+        </li>
+        <li class="faq-item">
+          <div class="faq-question"><strong>هل يمكنني الجمع بين أكثر من مجال؟</strong> <i class="fas fa-chevron-down"></i></div>
+          <div class="faq-answer">
+            <p>نعم، الجمع بين المجالات (مثل IoT والحوسبة السحابية) يمكن أن يزيد من فرصك في سوق العمل. في الواقع، معظم المشاريع الحديثة تتطلب معرفة متعددة المجالات.</p>
+            <p>أفضل المجالات التي يمكن دمجها معًا:</p>
+            <ul>
+              <li>الأنظمة المضمنة + إنترنت الأشياء</li>
+              <li>الشبكات + الحوسبة السحابية</li>
+              <li>البرمجة + الذكاء الاصطناعي</li>
+              <li>إنترنت الأشياء + الحوسبة السحابية</li>
+            </ul>
+          </div>
+        </li>
+        <li class="faq-item">
+          <div class="faq-question"><strong>ما هي أفضل المصادر المجانية للتعلم؟</strong> <i class="fas fa-chevron-down"></i></div>
+          <div class="faq-answer">
+            <p>هناك العديد من المصادر المجانية عالية الجودة منها:</p>
+            <ul>
+              <li><strong>YouTube:</strong> قنوات مثل The Engineering Mindset, Corey Schafer, Programming with Mosh</li>
+              <li><strong>Coursera:</strong> دورات مجانية مع إمكانية الحصول على شهادات مدفوعة</li>
+              <li><strong>FreeCodeCamp:</strong> مسارات تعليمية متكاملة في مجالات متعددة</li>
+              <li><strong>edX:</strong> دورات من جامعات عالمية يمكن الوصول لمحتواها مجانًا</li>
+              <li><strong>GitHub:</strong> مشاريع مفتوحة المصدر للتعلم العملي</li>
+              <li><strong>MDN Web Docs:</strong> لتعلم تقنيات الويب</li>
+              <li><strong>W3Schools:</strong> دروس تفاعلية لتقنيات الويب</li>
+              <li><strong>Khan Academy:</strong> أساسيات البرمجة والرياضيات والعلوم</li>
+            </ul>
+          </div>
+        </li>
+        <li class="faq-item">
+          <div class="faq-question"><strong>ما هو المجال الأكثر طلبًا في سوق العمل حاليًا؟</strong> <i class="fas fa-chevron-down"></i></div>
+          <div class="faq-answer">
+            <p>من أكثر المجالات طلبًا حاليًا:</p>
+            <ul>
+              <li><strong>الذكاء الاصطناعي وتعلم الآلة:</strong> أحد أسرع المجالات نموًا مع تطبيقات في جميع القطاعات</li>
+              <li><strong>تطوير الويب:</strong> خاصة تطوير الواجهات الأمامية والخلفية</li>
+              <li><strong>الأمن السيبراني:</strong> مع زيادة المخاطر الأمنية، زاد الطلب على المتخصصين</li>
+              <li><strong>الحوسبة السحابية:</strong> مهندسي AWS و Azure و Google Cloud</li>
+              <li><strong>إنترنت الأشياء:</strong> خاصة مع تزايد المنازل والمدن الذكية</li>
+            </ul>
+          </div>
+        </li>
+        <li class="faq-item">
+          <div class="faq-question"><strong>أيهما أفضل: التعلم الذاتي أم الدورات الأكاديمية؟</strong> <i class="fas fa-chevron-down"></i></div>
+          <div class="faq-answer">
+            <p>كلاهما له مزايا:</p>
+            <p><strong>التعلم الذاتي:</strong></p>
+            <ul>
+              <li>مرونة أكبر في اختيار المسار والوتيرة</li>
+              <li>تكلفة أقل بشكل كبير</li>
+              <li>تركيز على المهارات العملية</li>
+              <li>يعزز مهارات حل المشكلات</li>
+            </ul>
+            <p><strong>الدورات الأكاديمية:</strong></p>
+            <ul>
+              <li>هيكل تعليمي منظم</li>
+              <li>إشراف مباشر من الخبراء</li>
+              <li>فرص التواصل وبناء العلاقات</li>
+              <li>شهادات معترف بها</li>
+            </ul>
+            <p>الأفضل هو الجمع بين الاثنين عندما أمكن: استخدام الموارد المجانية للتعلم الذاتي مع دورات مختارة عند الحاجة.</p>
+          </div>
+        </li>
+      </ul>
+    </section>
+
+    <section class="resources" id="resources-section" style="display: none;">
+      <h2>مصادر تعليمية إضافية</h2>
+      <div class="resource-categories">
+        <button class="resource-category active" data-category="all">الكل</button>
+        <button class="resource-category" data-category="courses">دورات تعليمية</button>
+        <button class="resource-category" data-category="books">كتب</button>
+        <button class="resource-category" data-category="websites">مواقع</button>
+        <button class="resource-category" data-category="youtube">قنوات يوتيوب</button>
+      </div>
+      
+      <div class="resources-container">
+        <div class="resource-card" data-categories="courses websites">
+          <div class="resource-icon"><i class="fas fa-laptop-code"></i></div>
+          <h3>FreeCodeCamp</h3>
+          <p>منصة تعليمية مجانية تقدم شهادات معتمدة في مجالات البرمجة المختلفة مع مشاريع عملية.</p>
+          <a href="https://www.freecodecamp.org/" target="_blank" class="resource-link">فتح الموقع <i class="fas fa-external-link-alt"></i></a>
+        </div>
+        
+        <div class="resource-card" data-categories="courses websites">
+          <div class="resource-icon"><i class="fas fa-graduation-cap"></i></div>
+          <h3>Coursera</h3>
+          <p>دورات احترافية من أفضل الجامعات والشركات العالمية، مع إمكانية الوصول المجاني للمحتوى.</p>
+          <a href="https://www.coursera.org/" target="_blank" class="resource-link">فتح الموقع <i class="fas fa-external-link-alt"></i></a>
+        </div>
+        
+        <div class="resource-card" data-categories="courses websites">
+          <div class="resource-icon"><i class="fas fa-university"></i></div>
+          <h3>edX</h3>
+          <p>دورات من جامعات مثل هارفارد و MIT في مختلف المجالات التقنية مع إمكانية الحصول على شهادات.</p>
+          <a href="https://www.edx.org/" target="_blank" class="resource-link">فتح الموقع <i class="fas fa-external-link-alt"></i></a>
+        </div>
+        
+        <div class="resource-card" data-categories="courses websites">
+          <div class="resource-icon"><i class="fas fa-chalkboard-teacher"></i></div>
+          <h3>Udemy</h3>
+          <p>آلاف الدورات التدريبية في مختلف المجالات التقنية بأسعار معقولة وعروض مستمرة.</p>
+          <a href="https://www.udemy.com/" target="_blank" class="resource-link">فتح الموقع <i class="fas fa-external-link-alt"></i></a>
+        </div>
+        
+        <div class="resource-card" data-categories="youtube">
+          <div class="resource-icon"><i class="fab fa-youtube"></i></div>
+          <h3>The Engineering Mindset</h3>
+          <p>قناة متخصصة في شرح الهندسة الإلكترونية والأنظمة المضمنة بطريقة مبسطة وعملية.</p>
+          <a href="https://www.youtube.com/user/EngineeringMindset" target="_blank" class="resource-link">فتح القناة <i class="fas fa-external-link-alt"></i></a>
+        </div>
+        
+        <div class="resource-card" data-categories="websites">
+          <div class="resource-icon"><i class="fas fa-code"></i></div>
+          <h3>GitHub</h3>
+          <p>منصة للمشاريع مفتوحة المصدر والتعاون في تطوير البرمجيات، مع ملايين المشاريع للتعلم منها.</p>
+          <a href="https://github.com/" target="_blank" class="resource-link">فتح الموقع <i class="fas fa-external-link-alt"></i></a>
+        </div>
+        
+        <div class="resource-card" data-categories="books">
+          <div class="resource-icon"><i class="fas fa-book"></i></div>
+          <h3>O'Reilly</h3>
+          <p>ناشر كتب تقنية مشهور يقدم مكتبة ضخمة من الكتب والموارد في جميع المجالات التقنية.</p>
+          <a href="https://www.oreilly.com/" target="_blank" class="resource-link">فتح الموقع <i class="fas fa-external-link-alt"></i></a>
+        </div>
+        
+        <div class="resource-card" data-categories="youtube">
+          <div class="resource-icon"><i class="fab fa-youtube"></i></div>
+          <h3>Traversy Media</h3>
+          <p>قناة رائعة لتعلم تطوير الويب والتطبيقات بمختلف التقنيات مع مشاريع عملية كاملة.</p>
+          <a href="https://www.youtube.com/user/TechGuyWeb" target="_blank" class="resource-link">فتح القناة <i class="fas fa-external-link-alt"></i></a>
+        </div>
+        
+        <div class="resource-card" data-categories="websites">
+          <div class="resource-icon"><i class="fas fa-file-code"></i></div>
+          <h3>MDN Web Docs</h3>
+          <p>توثيق شامل لتقنيات الويب من Mozilla، مرجع ممتاز لمطوري الواجهات الأمامية.</p>
+          <a href="https://developer.mozilla.org/" target="_blank" class="resource-link">فتح الموقع <i class="fas fa-external-link-alt"></i></a>
+        </div>
+        
+        <div class="resource-card" data-categories="youtube">
+          <div class="resource-icon"><i class="fab fa-youtube"></i></div>
+          <h3>Fireship</h3>
+          <p>شروحات سريعة وعميقة للتقنيات الحديثة في مجال تطوير الويب والتطبيقات.</p>
+          <a href="https://www.youtube.com/c/Fireship" target="_blank" class="resource-link">فتح القناة <i class="fas fa-external-link-alt"></i></a>
+        </div>
+      </div>
+    </section>
+    
+    <section class="roadmap" id="roadmap-section" style="display: none;">
+      <h2>خارطة الطريق الشاملة</h2>
+      <p class="roadmap-intro">هذا المخطط يساعدك على فهم العلاقة بين المجالات المختلفة وكيفية البناء على المهارات تدريجياً:</p>
+      
+      <div class="roadmap-container">
+        <div class="roadmap-step step-1">
+          <div class="step-number">1</div>
+          <div class="step-content">
+            <h3>الأساسيات المشتركة</h3>
+            <ul>
+              <li>أساسيات البرمجة (Python/JavaScript)</li>
+              <li>مبادئ الحوسبة</li>
+              <li>أساسيات الإلكترونيات</li>
+              <li>مبادئ الشبكات</li>
+            </ul>
+          </div>
+        </div>
+        
+        <div class="roadmap-path"></div>
+        
+        <div class="roadmap-step step-2">
+          <div class="step-number">2</div>
+          <div class="step-content">
+            <h3>اختر مسارك الأولي</h3>
+            <div class="paths">
+              <div class="path-option" data-field="embedded">الأنظمة المضمّنة</div>
+              <div class="path-option" data-field="programming">تطوير البرمجيات</div>
+              <div class="path-option" data-field="networking">الشبكات</div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="roadmap-path"></div>
+        
+        <div class="roadmap-step step-3">
+          <div class="step-number">3</div>
+          <div class="step-content">
+            <h3>توسيع المهارات</h3>
+            <div class="paths">
+              <div class="path-option" data-field="iot">إنترنت الأشياء</div>
+              <div class="path-option" data-field="cloud">الحوسبة السحابية</div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="roadmap-path"></div>
+        
+        <div class="roadmap-step step-4">
+          <div class="step-number">4</div>
+          <div class="step-content">
+            <h3>تخصص متقدم</h3>
+            <div class="paths">
+              <div class="path-option" data-field="ai">الذكاء الاصطناعي</div>
+              <div class="path-option">أمن المعلومات</div>
+              <div class="path-option">تقنيات الواقع الافتراضي</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- التذييل -->
+  <footer>
+    <div class="footer-content">
+      <div class="footer-section">
+        <h3>Salah's Tech Roadmap</h3>
+        <p>دليلك التفاعلي لتعلم التقنيات الحديثة وتطوير مهاراتك في مختلف المجالات التقنية.</p>
+      </div>
+      
+      <div class="footer-section">
+        <h3>تواصل معنا</h3>
+        <div class="social-links">
+          <a href="#" target="_blank"><i class="fab fa-github"></i></a>
+          <a href="#" target="_blank"><i class="fab fa-linkedin"></i></a>
+          <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+          <a href="#" target="_blank"><i class="fab fa-youtube"></i></a>
+        </div>
+      </div>
+      
+      <div class="footer-section">
+        <h3>مجالات أخرى</h3>
+        <ul>
+          <li><a href="#">تطوير الألعاب</a></li>
+          <li><a href="#">الأمن السيبراني</a></li>
+          <li><a href="#">علم البيانات</a></li>
+          <li><a href="#">تقنيات الويب المتقدمة</a></li>
+        </ul>
+      </div>
+    </div>
+    
+    <div class="footer-bottom">
+      <p>&copy; 2023 Salah's Tech Roadmap. جميع الحقوق محفوظة.</p>
+      <div class="theme-switch">
+        <span>تغيير النمط:</span>
+        <button id="theme-default" class="theme-btn active" data-theme="default"><i class="fas fa-sun"></i></button>
+        <button id="theme-dark" class="theme-btn" data-theme="dark"><i class="fas fa-moon"></i></button>
+        <button id="theme-contrast" class="theme-btn" data-theme="contrast"><i class="fas fa-adjust"></i></button>
+      </div>
+    </div>
+  </footer>
+
+  <!-- زر العودة للأعلى -->
+  <button id="back-to-top" title="العودة للأعلى"><i class="fas fa-arrow-up"></i></button>
+
+  <!-- ربط JavaScript -->
+  <script src="script.js"></script>
+</body>
+</html>
